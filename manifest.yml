@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: nodered-FX
+  host: nodered-FX
+  disk_quota: 1024M
+  services:
+  - nodered-FX-cloudantNoSQLDB
+  env:
+    NODE_RED_USERNAME: myuser
+    NODE_RED_PASSWORD: mypass
